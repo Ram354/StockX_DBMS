@@ -1,0 +1,206 @@
+1. Display the names of customers who have made transactions on stocks associated with companies headquartered in New York.
+
+SELECT DISTINCT c.Name
+FROM CUSTOMER c
+JOIN WALLET w ON c.bank_acc_no = w.bank_acc_no
+JOIN TRANSACTION_HISTORY th ON w.stock_acc_id = th.stock_acc_id
+JOIN IPO i ON th.trans_id = i.trans_id
+JOIN COMPANY_DETAILS cd ON i.comp_name = cd.name
+WHERE cd.hq = 'New York';
+
+2. List the names of customers along with their total wallet balances (sum of wallet balances) and average bank account balances.
+
+SELECT c.Name, SUM(w.balance) AS total_wallet_balance, AVG(b.balance) AS avg_bank_balance
+FROM CUSTOMER c
+INNER JOIN WALLET w ON c.bank_acc_no = w.bank_acc_no
+INNER JOIN BANK_ACC b ON c.bank_acc_no = b.acc_no
+GROUP BY c.Name;
+
+3. Retrieve the names and quantities of stocks in the portfolio along with their associated current market price, sorted by the product of quantity and current market price in descending order.
+
+SELECT p.stock_name, p.qty, sd.cur_mp, (p.qty * sd.cur_mp) AS total_value
+FROM PORTFOLIO p
+JOIN STOCK_DETAILS sd ON p.stock_name = sd.stock_name
+ORDER BY total_value DESC;
+
+4. List the names of mutual funds along with the count of customers who have invested in them.
+
+SELECT mf.name AS mutual_fund_name, COUNT(th.fund_name) AS investor_count
+FROM MUTUAL_FUNDS mf
+LEFT JOIN TRANSACTION_HISTORY th ON mf.name = th.fund_name
+GROUP BY mf.name;
+
+5. Retrieve the names of customers along with their total wallet balances and the total balance of all their bank accounts.
+
+SELECT 
+    c.Name AS customer_name, 
+    COALESCE(SUM(w.balance), 0) AS total_wallet_balance,
+    COALESCE(SUM(ba.balance), 0) AS total_bank_balance
+FROM 
+    CUSTOMER c
+LEFT JOIN 
+    WALLET w ON c.bank_acc_no = w.bank_acc_no
+LEFT JOIN 
+    BANK_ACC ba ON c.bank_acc_no = ba.acc_no
+GROUP BY 
+    c.Name;
+
+6. Show the names of customers along with the total quantity of stocks in their portfolio and the sum of their wallet balances.
+
+SELECT 
+    c.Name AS customer_name, 
+    COALESCE(SUM(p.qty), 0) AS total_stock_quantity,
+    COALESCE(SUM(w.balance), 0) AS total_wallet_balance
+FROM 
+    CUSTOMER c
+LEFT JOIN 
+    PORTFOLIO p ON c.demat_id = p.stock_acc_id
+LEFT JOIN 
+    WALLET w ON c.bank_acc_no = w.bank_acc_no
+GROUP BY 
+    c.Name;
+
+7. List the names of customers along with their total wallet balances and the total balance of all their bank accounts, sorted by the total wallet balance in descending order.
+
+SELECT
+    c.Name AS customer_name,
+    COALESCE(SUM(w.balance), 0) AS total_wallet_balance,
+    COALESCE(SUM(b.balance), 0) AS total_bank_balance
+FROM
+    CUSTOMER c
+LEFT JOIN
+    WALLET w ON c.bank_acc_no = w.bank_acc_no
+LEFT JOIN
+    BANK_ACC b ON c.bank_acc_no = b.acc_no
+GROUP BY
+    c.Name
+ORDER BY
+    total_wallet_balance DESC;
+
+8. Show the names of customers along with the total quantity of stocks in their portfolio and the sum of their wallet balances, sorted by the sum of wallet balances in descending order.
+
+SELECT
+    c.Name AS customer_name,
+    COALESCE(SUM(p.qty), 0) AS total_stock_quantity,
+    COALESCE(SUM(w.balance), 0) AS total_wallet_balance
+FROM
+    CUSTOMER c
+LEFT JOIN
+    PORTFOLIO p ON c.demat_id = p.stock_acc_id
+LEFT JOIN
+    WALLET w ON c.bank_acc_no = w.bank_acc_no
+GROUP BY
+    c.Name
+ORDER BY
+    total_wallet_balance DESC;
+
+9. List the names of mutual funds along with their return percentages, but only consider mutual funds with a return percentage greater than 7%.
+
+SELECT name, return_perc
+FROM MUTUAL_FUNDS
+WHERE return_perc > 7;
+
+10. Show the names of customers along with their total wallet balances and the average bank account balances, sorted by the total wallet balance in descending order.
+
+SELECT c.Name, SUM(w.balance) AS total_wallet_balance, AVG(b.balance) AS avg_bank_balance
+FROM CUSTOMER c
+INNER JOIN WALLET w ON c.bank_acc_no = w.bank_acc_no
+INNER JOIN BANK_ACC b ON c.bank_acc_no = b.acc_no
+GROUP BY c.Name
+ORDER BY total_wallet_balance DESC;
+
+
+11. Retrieve the names of all customers.
+
+SELECT Name FROM CUSTOMER;
+
+
+12. Count the total number of transactions.
+
+SELECT COUNT(*) AS total_transactions FROM TRANSACTIONS;
+
+
+13.Retrieve the names and balances of all bank accounts.
+
+SELECT acc_no, balance
+FROM BANK_ACC;
+
+14. Find the names and current market prices of all stocks in the stock details table.
+
+SELECT stock_name, cur_mp
+FROM STOCK_DETAILS;
+
+15. What is the total investment required for each mutual fund along with its return percentage?
+
+SELECT name, investment_req, return_perc
+FROM MUTUAL_FUNDS;
+
+16. Show the email addresses of all customers.
+
+SELECT email_id
+FROM CUSTOMER;
+
+17. Retrieve the quantity and premium listed for all IPOs.
+
+SELECT qty, premium_listed
+FROM IPO;
+
+18. List the names and headquarters of all companies.
+
+SELECT name, hq
+FROM COMPANY_DETAILS;
+
+19. Get the wallet balances for all customers.
+
+SELECT balance
+FROM WALLET;
+
+20. Show the profit and quantity of stocks in each portfolio.
+
+SELECT profit, qty
+FROM PORTFOLIO;
+
+21. Find the stock names and dividends in the watchlist.
+
+SELECT stock_name, dividends
+FROM WATCHLIST;
+
+22. Retrieve the IDs and account numbers of all demat accounts.
+
+SELECT id, acc_no
+FROM DEMAT;
+
+23. Retrieve the names and balances of bank accounts with balances greater than 10000.
+
+SELECT acc_no, balance FROM BANK_ACC WHERE balance > 10000;
+
+24. Find the total investment requirement for all mutual funds in a specific stock account.
+
+SELECT SUM(investment_req) FROM MUTUAL_FUNDS WHERE stock_acc_id = 2339619165;
+
+
+25. Get the transaction IDs and corresponding fund names for transactions with balances below 5000.
+
+SELECT trans_id, fund_name FROM TRANSACTION_HISTORY WHERE curr_balance < 5000;
+
+26. Find the company names and headquarters of companies with major shareholders holding more than 20%.
+
+SELECT name, hq FROM COMPANY_DETAILS WHERE name IN (SELECT name FROM PRIVATE_SHAREHOLDINGS WHERE percentage > 7);
+
+27. Find the stock names and dividends in the watchlist with dividends greater than 2.
+
+SELECT stock_name, dividends FROM WATCHLIST WHERE dividends > 0.75;
+
+28. Get the contact numbers of customers residing in a specific state.
+
+SELECT contact_no FROM CUSTOMER WHERE cust_id IN (SELECT cust_id FROM CUSTOMER WHERE state = 'California');
+
+
+29. Retrieve the names of customers who have a bank account and contact numbers.
+
+SELECT Name FROM CUSTOMER WHERE bank_acc_no IS NOT NULL AND contact_no IS NOT NULL;
+
+30. Get the stock names and current market prices from the stock details table for stocks listed in a specific exchange.
+
+SELECT stock_name, cur_mp FROM STOCK_DETAILS WHERE excahnge = 'NASDAQ';
+

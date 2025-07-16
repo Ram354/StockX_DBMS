@@ -1,0 +1,152 @@
+CREATE TABLE BANK_ACC(
+acc_no BIGINT primary key,
+balance float
+);
+
+CREATE TABLE STOCK_ACC(
+stock_id BIGINT primary key,
+balance float
+);
+CREATE TABLE MUTUAL_FUNDS(
+name varchar,
+return_perc float,
+investment_req float,
+stock_acc_id BIGINT,
+PRIMARY KEY(name, stock_acc_id),
+FOREIGN KEY (stock_acc_id) REFERENCES STOCK_ACC(stock_id)
+);
+CREATE TABLE CUSTOMER(
+cust_id BIGINT primary key not null,
+Name varchar,
+state varchar,
+email_id varchar,
+contact_no BIGINT,
+dob date,
+bank_acc_no BIGINT,
+pan_no BIGINT,
+demat_no BIGINT,
+demat_id BIGINT,
+CONSTRAINT fk_id
+        FOREIGN KEY (bank_acc_no)
+        REFERENCES BANK_ACC(acc_no)
+);
+
+CREATE TABLE STOCK_DETAILS(
+stock_name varchar primary key,
+cur_mp float,
+growth float,
+excahnge varchar
+);
+
+CREATE TABLE IPO(
+qty BIGINT,
+premium_listed float,
+trans_id BIGINT,
+stock_acc_id BIGINT,
+comp_name varchar primary key,
+CONSTRAINT fk_id
+        
+        FOREIGN KEY (stock_acc_id)
+        REFERENCES STOCK_ACC(stock_id)
+);
+
+CREATE TABLE TRANSACTION_HISTORY(
+date_of_trans date,
+curr_balance float,
+trans_id BIGINT primary key,
+stock_acc_id BIGINT,
+fund_name varchar, 
+CONSTRAINT fk_id
+        FOREIGN KEY (fund_name, stock_acc_id)
+        REFERENCES MUTUAL_FUNDS(name, stock_acc_id)
+);
+
+
+CREATE TABLE COMPANY_DETAILS(
+name varchar primary key,
+hq varchar
+
+);
+
+
+
+
+CREATE TABLE  PRIVATE_SHAREHOLDINGS(
+comp_name varchar,
+major_shareholders VARCHAR,
+percentage FLOAT,
+CONSTRAINT fk_id
+        FOREIGN KEY (comp_name)
+        REFERENCES COMPANY_DETAILS(name)
+);
+
+
+CREATE TABLE WALLET(
+wallet_id BIGINT primary key,
+balance float,
+bank_acc_no BIGINT,
+stock_acc_id BIGINT,
+CONSTRAINT fk_id
+        FOREIGN KEY (bank_acc_no)
+        REFERENCES BANK_ACC(acc_no),
+        FOREIGN KEY (stock_acc_id)
+        REFERENCES STOCK_ACC(stock_id)
+);
+
+CREATE TABLE PORTFOLIO(
+profit BIGINT,
+stock_name varchar,
+qty BIGINT,
+stock_acc_id BIGINT,
+CONSTRAINT fk_id
+        FOREIGN KEY (stock_acc_id)
+        REFERENCES STOCK_ACC(stock_id),
+        FOREIGN KEY (stock_name)
+        REFERENCES STOCK_DETAILS(stock_name)
+);
+
+CREATE TABLE WATCHLIST(
+stock_name varchar,
+dividends  float,
+growth float,
+exchange varchar,
+cur_mp float,
+CONSTRAINT fk_id
+        FOREIGN KEY (stock_name)
+        REFERENCES STOCK_DETAILS(stock_name)
+);
+
+CREATE TABLE EMAIL(
+cust_id BIGINT,
+email_id varchar,
+CONSTRAINT fk_id
+        FOREIGN KEY (cust_id)
+        REFERENCES CUSTOMER(cust_id)
+);
+
+CREATE TABLE CONTACT(
+cust_id BIGINT,
+contact BIGINT,
+CONSTRAINT fk_id
+        FOREIGN KEY (cust_id)
+        REFERENCES CUSTOMER(cust_id)
+);
+
+CREATE TABLE HAS(
+stock_id BIGINT,
+comp_name varchar,
+CONSTRAINT fk_id
+        FOREIGN KEY (stock_id)
+        REFERENCES STOCK_ACC(stock_id),
+        FOREIGN KEY (comp_name)
+        REFERENCES IPO(comp_name)
+);
+
+CREATE TABLE DEMAT(
+cust_id BIGINT,
+id varchar,
+acc_no BIGINT,
+CONSTRAINT fk_id
+        FOREIGN KEY (cust_id)
+        REFERENCES CUSTOMER(cust_id)
+);

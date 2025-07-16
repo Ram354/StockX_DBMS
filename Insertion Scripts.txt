@@ -1,0 +1,317 @@
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (1985577550, 83375.64);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (5891760266, 23799.09);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (9309980494, 23105.49);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (5279866792, 92317.85);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (9505114559, 74709.91);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (5031337168, 26614.47);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (533055334, 13375.97);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (7631423229, 24193.63);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (3143430362, 27751.01);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (7229454697, 75375.03);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (3144891339, 25983.56);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (4276904005, 92078.25);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (3085997598, 96569.41);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (9795849441, 39229.83);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (7883350056, 21929.81);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (9360899186, 73215.81);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (8611006909, 85795.12);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (1379972132, 83995.12);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (8533973373, 39151.24);
+INSERT INTO BANK_ACC (acc_no, balance) VALUES (3792391392, 39300.91);
+
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (2339619165, 53422.56);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (6632275052, 21981.57);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (6407007704, 60368.64);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (2714484301, 31841.02);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (1585329509, 28272.95);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (7742181770, 415.61);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (5705909578, 58475.62);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (3163040950, 15806.38);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (1819157962, 82468.23);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (1686057040, 36388.21);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (6315821634, 36441.32);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (4328427237, 29119.28);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (9447829279, 68786.51);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (4086371685, 39809.66);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (4132346692, 46674.14);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (7203564517, 25870.09);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (1771448350, 69004.59);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (1940704847, 77839.66);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (1313472905, 44461.14);
+INSERT INTO STOCK_ACC (stock_id, balance) VALUES (9601857281, 26024.35);
+
+
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (4965245, 'Gael Bradder', 'Oklahoma', 'gbradder0@unblog.fr', 4053104498, '1990-07-29', 1985577550, 3073912347, 3775776079, 8125706798);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (8437680, 'Kordula Ferrand', 'California', 'kferrand1@dailymotion.com', 16267593722, '1998-01-08', 5891760266, 6459132631, 3123586022, 8443367350);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (3186913, 'Wren Grund', 'California', 'wgrund2@accuweather.com', 19092389645, '1993-05-02', 9309980494, 4320134877, 2927322155, 6118850542);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (9264871, 'Charlene Fidock', 'Illinois', 'cfidock3@foxnews.com', 13123790291, '2007-10-23', 5279866792, 3201638846, 8262270827, 7701327649);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (5966977, 'Anthe Sleite', 'New York', 'asleite4@creativecommons.org', 12123459631, '2006-03-17', 9505114559, 685517675, 8855194291, 3216350312);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (5345650, 'Alverta Dumberrill', 'Missouri', 'adumberrill5@forbes.com', 18164566922, '2012-02-02', 5031337168, 7633128682, 7269149690, 8302008680);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (8868692, 'Grover Bithell', 'Maryland', 'gbithell6@booking.com', 14436192982, '1990-03-30', 533055334, 4797243821, 1093790016, 2057651908);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (4420048, 'Bryn Shiel', 'California', 'bshiel7@dedecms.com', 16192999754, '2010-08-03', 7631423229, 5041849137, 6732223704, 8899655324);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (4763048, 'Roxine Cockley', 'Texas', 'rcockley8@hp.com', 19729506256, '2001-05-25', 3143430362, 1015727425, 5845637988, 8506122171);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (7009014, 'Alard Barttrum', 'New Jersey', 'abarttrum9@prweb.com', 19731611089, '1994-06-08', 7229454697, 8320840147, 8907218773, 3016769808);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (1754204, 'Gill Ching', 'North Dakota', 'gchinga@freewebs.com', 17013629781, '2002-07-10', 3144891339, 4888695008, 489174329, 185811582);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (9724701, 'Ches Sheerin', 'Indiana', 'csheerinb@vk.com', 17654000230, '2013-01-27', 4276904005, 6518271973, 9419978370, 8340436813);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (1456298, 'Billie Barg', 'California', 'bbargc@economist.com', 17149130752, '1994-09-07', 3085997598, 307988236, 2473167338, 994335253);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (2060011, 'Lavena Drewry', 'California', 'ldrewryd@nhs.uk', 14082813590, '1998-01-02', 9795849441, 4670144383, 8068227687, 4883011097);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (7422912, 'Audi Volette', 'Idaho', 'avolettee@hud.gov', 12084084855, '1995-06-01', 7883350056, 5923196182, 9570682787, 7920393965);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (5270978, 'Delia McGreil', 'South Dakota', 'dmcgreilf@marketwatch.com', 16059800570, '2002-01-14', 9360899186, 3970442850, 8717560225, 2332332456);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (7336490, 'Phillis Bernolet', 'Texas', 'pbernoletg@creativecommons.org', 12549797386, '1999-03-27', 8611006909, 371697433, 3834093742, 585321116);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (9721933, 'Obediah Fibbens', 'Texas', 'ofibbensh@irs.gov', 19151406358, '2003-05-08',  1379972132,540669806, 4449257596, 7098663166);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (1876326, 'Vivia Conrard', 'Illinois', 'vconrardi@marketwatch.com', 13095089490, '2006-01-06', 8533973373, 4759433449, 3896507540, 4383639593);
+INSERT INTO CUSTOMER (cust_id, Name, state, email_id, contact_no, dob, bank_acc_no, pan_no, demat_no, demat_id) VALUES (5411053, 'Boyd Thulborn', 'Texas', 'bthulbornj@psu.edu', 19158315597, '1996-02-01', 3792391392, 1683985346, 9677716956, 6881241046);
+
+
+
+
+
+
+INSERT INTO COMPANY_DETAILS (name, hq)
+VALUES
+    ('Apple Inc.', 'Cupertino, California'),
+    ('Microsoft Corporation', 'Redmond, Washington'),
+    ('Amazon.com Inc.', 'Seattle, Washington'),
+    ('Alphabet Inc.', 'Mountain View, California'),
+    ('Facebook Inc.', 'Menlo Park, California'),
+    ('Tesla, Inc.', 'Palo Alto, California'),
+    ('JPMorgan Chase & Co.', 'New York City, New York'),
+    ('Johnson & Johnson', 'New Brunswick, New Jersey'),
+    ('Visa Inc.', 'Foster City, California'),
+    ('Procter & Gamble Co.', 'Cincinnati, Ohio'),
+    ('Walmart Inc.', 'Bentonville, Arkansas'),
+    ('Berkshire Hathaway Inc.', 'Omaha, Nebraska'),
+    ('Intel Corporation', 'Santa Clara, California'),
+    ('Cisco Systems, Inc.', 'San Jose, California'),
+    ('Pfizer Inc.', 'New York City, New York'),
+    ('Coca-Cola Company', 'Atlanta, Georgia'),
+    ('Verizon Communications Inc.', 'New York City, New York'),
+    ('The Walt Disney Company', 'Burbank, California'),
+    ('AT&T Inc.', 'Dallas, Texas'),
+    ('Netflix Inc.', 'Los Gatos, California');
+
+
+insert into DEMAT (cust_id, id, acc_no) values (4965245, 14400448, 496524514400448);
+insert into DEMAT (cust_id, id, acc_no) values (8437680, 12309668, 843768012309668);
+insert into DEMAT (cust_id, id, acc_no) values (3186913, 13991562, 318691313991562);
+insert into DEMAT (cust_id, id, acc_no) values (9264871, 15848607, 926487115848607);
+insert into DEMAT (cust_id, id, acc_no) values (5966977, 17730236, 596697717730236);
+insert into DEMAT (cust_id, id, acc_no) values (5345650, 18629261, 534565018629261);
+insert into DEMAT (cust_id, id, acc_no) values (8868692, 15931694, 886869215931694);
+insert into DEMAT (cust_id, id, acc_no) values (4420048, 19065133, 442004819065133);
+insert into DEMAT (cust_id, id, acc_no) values (4763048, 10468826, 476304810468826);
+insert into DEMAT (cust_id, id, acc_no) values (7009014, 16303486, 700901416303486);
+insert into DEMAT (cust_id, id, acc_no) values (1754204, 10107729, 175420410107729);
+insert into DEMAT (cust_id, id, acc_no) values (9724701, 17576341, 972470117576341);
+insert into DEMAT (cust_id, id, acc_no) values (1456298, 16072230, 145629816072230);
+insert into DEMAT (cust_id, id, acc_no) values (2060011, 10677073, 206001110677073);
+insert into DEMAT (cust_id, id, acc_no) values (7422912, 11459902, 742291211459902);
+insert into DEMAT (cust_id, id, acc_no) values (5270978, 17952474, 527097817952474);
+insert into DEMAT (cust_id, id, acc_no) values (7336490, 15300016, 733649015300016);
+insert into DEMAT (cust_id, id, acc_no) values (9721933, 16175403, 972193316175403);
+insert into DEMAT (cust_id, id, acc_no) values (1876326, 19643729, 187632619643729);
+insert into DEMAT (cust_id, id, acc_no) values (5411053, 17499373, 541105317499373);
+
+
+INSERT INTO STOCK_DETAILS (stock_name, cur_mp, growth, excahnge)
+VALUES
+    ('AAPL', 145.56, 0.02, 'NASDAQ'),
+    ('MSFT', 260.12, 0.05, 'NASDAQ'),
+    ('AMZN', 3315.12, 0.03, 'NASDAQ'),
+    ('GOOGL', 2503.45, 0.04, 'NASDAQ'),
+    ('FB', 345.67, 0.01, 'NASDAQ'),
+    ('TSLA', 710.22, 0.06, 'NASDAQ'),
+    ('JPM', 151.34, 0.02, 'NYSE'),
+    ('JNJ', 168.45, 0.03, 'NYSE'),
+    ('V', 226.78, 0.04, 'NYSE'),
+    ('PG', 138.90, 0.01, 'NYSE'),
+    ('WMT', 141.67, 0.02, 'NYSE'),
+    ('BRK.A', 427800.00, 0.05, 'NYSE'),
+    ('INTC', 57.89, 0.03, 'NASDAQ'),
+    ('CSCO', 53.21, 0.02, 'NASDAQ'),
+    ('PFE', 39.76, 0.01, 'NYSE'),
+    ('KO', 53.12, 0.02, 'NYSE'),
+    ('VZ', 55.78, 0.03, 'NYSE'),
+    ('DIS', 186.45, 0.04, 'NYSE'),
+    ('T', 29.89, 0.01, 'NYSE'),
+    ('NFLX', 521.34, 0.05, 'NASDAQ');
+
+
+INSERT INTO MUTUAL_FUNDS (name, return_perc, investment_req, stock_acc_id)
+VALUES
+    ('Vanguard Total Stock Market Index Fund', 7.5, 5000.00, 2339619165),
+    ('Fidelity 500 Index Fund', 8.2, 10000.00, 6632275052),
+    ('American Funds Growth Fund of America', 6.9, 7500.00, 6407007704),
+    ('Vanguard Balanced Index Fund', 7.8, 8000.00, 2714484301),
+    ('Fidelity Contrafund', 9.1, 6000.00, 1585329509),
+    ('Vanguard Total Bond Market Index Fund', 6.5, 8500.00, 7742181770),
+    ('PIMCO Income Fund', 8.0, 7000.00, 5705909578),
+    ('Vanguard Wellesley Income Fund', 7.3, 9500.00, 3163040950),
+    ('American Funds Washington Mutual Investors Fund', 6.7, 6200.00, 1819157962),
+    ('T. Rowe Price Blue Chip Growth Fund', 8.5, 5500.00, 1686057040),
+    ('Vanguard Growth Index Fund', 7.6, 6800.00, 6315821634),
+    ('Fidelity Total Market Index Fund', 8.3, 7200.00, 4328427237),
+    ('Fidelity Contrafund', 7.4, 5800.00, 9447829279),
+    ('Vanguard Health Care Fund', 9.0, 6300.00, 4086371685),
+    ('Fidelity Growth Company Fund', 8.1, 6700.00, 4132346692),
+    ('Vanguard Emerging Markets Stock Index Fund', 6.8, 7400.00, 7203564517),
+    ('Fidelity Select Technology Portfolio', 7.9, 9000.00, 1771448350),
+    ('Vanguard Real Estate Index Fund', 8.4, 8200.00, 1940704847),
+    ('Fidelity Select Pharmaceuticals Portfolio', 7.2, 7300.00, 1313472905),
+    ('Fidelity Select Energy Portfolio', 8.7, 6700.00, 9601857281);
+
+
+INSERT INTO PORTFOLIO (profit, stock_name, qty, stock_acc_id)
+VALUES
+    (100.00, 'AAPL', 50, 2339619165),
+    (50.25, 'MSFT', 30, 6632275052),
+    (75.50, 'AMZN', 120, 6407007704),
+    (120.75, 'GOOGL', 340, 2714484301),
+    (90.80, 'FB', 35, 1585329509),
+    (200.35, 'TSLA', 25, 7742181770),
+    (80.60, 'JPM', 60, 5705909578),
+    (110.95, 'JNJ', 45, 3163040950),
+    (70.20, 'V', 515, 1819157962),
+    (85.75, 'PG', 370, 1686057040),
+    (95.40, 'WMT', 65, 6315821634),
+    (130.60, 'BRK.A', 110, 4328427237),
+    (105.75, 'INTC', 50, 9447829279),
+    (115.90, 'CSCO', 40, 4086371685),
+    (125.30, 'PFE', 35, 4132346692),
+    (140.25, 'KO', 300, 7203564517),
+    (150.70, 'VZ', 25, 1771448350),
+    (90.80, 'DIS', 55, 1940704847),
+    (100.60, 'T', 50, 1313472905),
+    (200.45, 'NFLX', 280, 9601857281);
+
+
+
+INSERT INTO HOLDINGS (comp_name, perc_holdings_p1, perc_holdings_p2, public_shareholding_perc)
+VALUES
+    ('Apple Inc.', 33.21, 38.44, 28.55),
+    ('Microsoft Corporation', 25.87, 29.76, 44.23),
+    ('Amazon.com Inc.', 29.45, 32.99, 37.56),
+    ('Alphabet Inc.', 34.78, 37.21, 28.01),
+    ('Facebook Inc.', 36.54, 39.23, 24.23),
+    ('Tesla, Inc.', 21.78, 27.65, 41.57),
+    ('JPMorgan Chase & Co.', 42.12, 39.34, 18.54),
+    ('Johnson & Johnson', 37.32, 32.98, 29.70),
+    ('Visa Inc.', 30.45, 34.78, 34.77),
+    ('Procter & Gamble Co.', 31.67, 28.54, 39.79),
+    ('Walmart Inc.', 23.45, 29.67, 46.88),
+    ('Berkshire Hathaway Inc.', 41.56, 38.89, 19.55),
+    ('Intel Corporation', 27.89, 35.47, 36.64),
+    ('Cisco Systems, Inc.', 29.76, 25.89, 44.35),
+    ('Pfizer Inc.', 35.78, 32.45, 31.77),
+    ('Coca-Cola Company', 37.23, 39.44, 23.33),
+    ('Verizon Communications Inc.', 31.89, 27.56, 40.55),
+    ('The Walt Disney Company', 33.45, 36.23, 30.32),
+    ('AT&T Inc.', 39.67, 35.45, 24.88),
+    ('Netflix Inc.', 26.78, 29.56, 43.66);
+
+
+INSERT INTO WALLET (wallet_id, balance, bank_acc_no, stock_acc_id)
+VALUES
+    (1001, 10000.25, 1985577550, 2339619165),
+    (1002, 5000.75, 5891760266, 6632275052),
+    (1003, 7500.60, 9309980494, 6407007704),
+    (1004, 2000.85, 5279866792, 2714484301),
+    (1005, 3000.45, 9505114559, 1585329509),
+    (1006, 1500.30, 5031337168, 7742181770),
+    (1007, 3500.40, 0533055334, 5705909578),
+    (1008, 4000.60, 7631423229, 3163040950),
+    (1009, 6000.90, 3143430362, 1819157962),
+    (1010, 1800.25, 7229454697, 1686057040),
+    (1011, 2200.75, 3144891339, 6315821634),
+    (1012, 8000.50, 4276904005, 4328427237),
+    (1013, 10000.00, 3085997598, 9447829279),
+    (1014, 5000.25, 9795849441, 4086371685),
+    (1015, 3000.75, 7883350056, 4132346692),
+    (1016, 4000.60, 9360899186, 7203564517),
+    (1017, 7000.90, 8611006909, 1771448350),
+    (1018, 1500.20, 1379972132, 1940704847),
+    (1019, 6000.50, 8533973373, 1313472905),
+    (1020, 4500.75, 3792391392, 9601857281);
+
+
+INSERT INTO WATCHLIST (stock_name, dividends, growth, exchange, cur_mp)
+VALUES
+    ('AAPL', 1.25, 0.02, 'NASDAQ', 145.56),
+    ('MSFT', 1.50, 0.05, 'NASDAQ', 260.12),
+    ('AMZN', 0.75, 0.03, 'NASDAQ', 3315.12),
+    ('GOOGL', 0.90, 0.04, 'NASDAQ', 2503.45),
+    ('FB', 0.50, 0.01, 'NASDAQ', 345.67),
+    ('TSLA', 0.80, 0.06, 'NASDAQ', 710.22),
+    ('JNJ', 1.30, 0.03, 'NYSE', 168.45),
+    ('INTC', 0.95, 0.03, 'NASDAQ', 57.89),
+    ('CSCO', 1.00, 0.02, 'NASDAQ', 53.21),
+    ('PFE', 1.05, 0.01, 'NYSE', 39.76),
+    ('KO', 1.20, 0.02, 'NYSE', 53.12),
+    ('NFLX', 1.60, 0.05, 'NASDAQ', 521.34);
+
+
+
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (100, 10.00, 1, 2339619165, 'Apple Inc.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (150, 12.50, 2, 6632275052, 'Microsoft Corporation');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (200, 15.75, 3, 6407007704, 'Amazon.com Inc.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (75, 8.25, 4, 2714484301, 'Alphabet Inc.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (120, 11.00, 5, 1585329509, 'Facebook Inc.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (80, 9.75, 6, 7742181770, 'Tesla, Inc.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (90, 10.50, 7, 5705909578, 'JPMorgan Chase & Co.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (110, 11.75, 8, 3163040950, 'Johnson & Johnson');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (85, 9.25, 9, 1819157962, 'Visa Inc.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (95, 10.25, 10, 1686057040, 'Procter & Gamble Co.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (105, 11.50, 11, 6315821634, 'Walmart Inc.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (125, 13.00, 12, 4328427237, 'Berkshire Hathaway Inc.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (100, 10.00, 13, 9447829279, 'Intel Corporation');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (135, 14.25, 14, 4086371685, 'Cisco Systems, Inc.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (70, 8.00, 15, 4132346692, 'Pfizer Inc.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (80, 9.75, 16, 7203564517, 'Coca-Cola Company');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (150, 12.50, 17, 1771448350, 'Verizon Communications Inc.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (95, 10.25, 18, 1940704847, 'The Walt Disney Company');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (110, 11.75, 19, 1313472905, 'AT&T Inc.');
+INSERT INTO IPO (qty, premium_listed, trans_id, stock_acc_id, comp_name) VALUES (120, 11.00, 20, 9601857281, 'Netflix Inc.');
+
+
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-01', 54220.56, 1, 2339619165, 'Vanguard Total Stock Market Index Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-02', 21990.57, 2, 6632275052, 'Fidelity 500 Index Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-03', 60408.64, 3, 6407007704, 'American Funds Growth Fund of America');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-04', 31870.02, 4, 2714484301, 'Vanguard Balanced Index Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-05', 28312.95, 5, 1585329509, 'Fidelity Contrafund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-06', 416.61, 6, 7742181770, 'Vanguard Total Bond Market Index Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-07', 58505.62, 7, 5705909578, 'PIMCO Income Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-08', 15836.38, 8, 3163040950, 'Vanguard Wellesley Income Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-09', 82538.23, 9, 1819157962, 'American Funds Washington Mutual Investors Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-10', 36458.21, 10, 1686057040, 'T. Rowe Price Blue Chip Growth Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-11', 36451.32, 11, 6315821634, 'Vanguard Growth Index Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-12', 29145.28, 12, 4328427237, 'Fidelity Total Market Index Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-13', 68826.51, 13, 9447829279, 'Fidelity Contrafund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-14', 39909.66, 14, 4086371685, 'Vanguard Health Care Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-15', 46684.14, 15, 4132346692, 'Fidelity Growth Company Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-16', 25970.09, 16, 7203564517, 'Vanguard Emerging Markets Stock Index Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-17', 69004.59, 17, 1771448350, 'Fidelity Select Technology Portfolio');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-18', 77839.66, 18, 1940704847, 'Vanguard Real Estate Index Fund');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-19', 44561.14, 19, 1313472905, 'Fidelity Select Pharmaceuticals Portfolio');
+INSERT INTO TRANSACTION_HISTORY (date_of_trans, curr_balance, trans_id, stock_acc_id, fund_name) VALUES ('2024-04-20', 26024.35, 20, 9601857281, 'Fidelity Select Energy Portfolio');
+
+
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Apple Inc.', 'Vanguard Group Inc.', 4.21);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Microsoft Corporation', 'BlackRock Inc.', 5.78);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Amazon.com Inc.', 'State Street Corporation', 3.94);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Alphabet Inc.', 'Capital Research Global Investors', 6.23);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Facebook Inc.', 'Fidelity Investments', 4.56);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Tesla, Inc.', 'The Vanguard Group, Inc.', 3.89);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('JPMorgan Chase & Co.', 'Berkshire Hathaway Inc.', 7.32);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Johnson & Johnson', 'The Vanguard Group, Inc.', 5.67);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Visa Inc.', 'BlackRock, Inc.', 4.78);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Procter & Gamble Co.', 'The Vanguard Group, Inc.', 3.45);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Walmart Inc.', 'BlackRock, Inc.', 6.78);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Berkshire Hathaway Inc.', 'The Vanguard Group, Inc.', 5.32);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Intel Corporation', 'BlackRock, Inc.', 4.89);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Cisco Systems, Inc.', 'The Vanguard Group, Inc.', 3.76);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Pfizer Inc.', 'BlackRock, Inc.', 4.21);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Coca-Cola Company', 'The Vanguard Group, Inc.', 5.78);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Verizon Communications Inc.', 'BlackRock, Inc.', 6.94);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('The Walt Disney Company', 'The Vanguard Group, Inc.', 4.56);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('AT&T Inc.', 'BlackRock, Inc.', 3.89);
+INSERT INTO PRIVATE_SHAREHOLDINGS (comp_name, major_shareholders, percentage) VALUES ('Netflix Inc.', 'The Vanguard Group, Inc.', 7.32);
